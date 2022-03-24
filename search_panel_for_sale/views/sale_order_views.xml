@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- sale order view -->
+    <record id="view_sales_order_filter_inherit_search" model="ir.ui.view">
+        <field name="name">sale.order.search.inherit</field>
+        <field name="model">sale.order</field>
+        <field name = "inherit_id" ref = "sale.view_sales_order_filter" />
+        <field name="arch" type="xml">
+            <xpath expr="//group" position="after">
+                <searchpanel>
+                    <field name="state"/>
+                    <field name="partner_id"/>
+                </searchpanel>   
+            </xpath>
+        </field> 
+   </record> 
+</odoo>
