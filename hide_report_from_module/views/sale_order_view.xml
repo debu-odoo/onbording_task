@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- hide report -->
+  <record id="sale.action_report_saleorder" model="ir.actions.report">
+      <field name="binding_model_id" eval="False"/>
+  </record>
+
+
+</odoo>
