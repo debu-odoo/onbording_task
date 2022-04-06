@@ -19,3 +19,4 @@ class ProductTemplate(models.Model):
         action = self.env['ir.actions.report']._for_xml_id('sale_barcode_customization.custom_barcode_report')
         action['context'] = {'default_product_ids': self.ids}
         return action
+        
