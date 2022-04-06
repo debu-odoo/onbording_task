@@ -9,8 +9,4 @@ class ProductCategory(models.Model):
     #field declaration
     #-----------------
     assign_sequence = fields.Boolean(string = "Assign sequence")
-    
-
-
-
-  
+   
