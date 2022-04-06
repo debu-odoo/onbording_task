@@ -34,8 +34,3 @@ class SaleOrder(models.Model):
             record.compute_field = self.env.user.has_group('sales_team.group_sale_manager')
 
    
-     
-
-  
-     
-    
