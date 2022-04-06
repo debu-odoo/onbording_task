@@ -8,7 +8,6 @@ class SaleOrder(models.Model):
 
       @api.model
       def test_cron_job(self):
-        #  print("rrrrrrrrrrrrrrrrrrrrrrr")
        sale_orders = self.env['sale.order'].search([('state','in', ('draft','sent'))])
        for rec in sale_orders:
            rec.action_confirm()
