@@ -21,4 +21,3 @@ class MrpWorkorder(models.Model):
     def done_workorder(self):
         for record in self:
            record.button_finish()
-
