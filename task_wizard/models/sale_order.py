@@ -19,5 +19,8 @@ class SaleOrder(models.Model):
              'context': ctx
              }
 
+    # def action_report_print(self):
+    #     return self.env.ref('sale.action_report_saleorder') .report_action(self)
+
 
     

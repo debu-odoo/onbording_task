@@ -19,4 +19,4 @@ class SaleOrderLine(models.Model):
             for record in uom_ids:
              if rec.product_id == record.product_id:
                 rec.product_uom = record.uom_id
-              
+

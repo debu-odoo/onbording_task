@@ -17,6 +17,8 @@
         'reports/report.xml',
         'security/ir.model.access.csv',
         'data/mail_template.xml',
+        'views/sale_order_views.xml',
+        
     ],
 
     # Other

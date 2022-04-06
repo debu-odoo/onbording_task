@@ -16,7 +16,7 @@
       
       'views/product_category.xml',
       'data/product_sequence.xml',
-      'data/mail_template.xml',
+      
     ],
 
     # Other

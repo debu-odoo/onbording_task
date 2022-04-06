@@ -1,5 +1,6 @@
 <odoo>
         <data>
+        <!-- mail template of sale order -->
             <record id="email_template_edi_sale" model="mail.template">
                 <field name="name">Sales: Send By Email</field>
                 <field name="model_id" ref="sale.model_sale_order"/>

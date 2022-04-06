@@ -18,6 +18,10 @@ class ConfirmWizard(models.Model):
         for sale_order in quotations_ids:
             sale_order.action_confirm()
 
+    
+    def action_report_print(self):
+        return self.env.ref('sale.action_report_saleorder') .report_action(self)
+
 
 
    

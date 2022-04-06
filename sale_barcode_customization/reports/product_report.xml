@@ -10,5 +10,5 @@
         <field name="binding_model_id" ref="model_product_template"/>
         <field name="binding_type">report</field>
     </record>
-    
+
 </odoo>

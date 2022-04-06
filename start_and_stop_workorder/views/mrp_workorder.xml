@@ -10,7 +10,6 @@
             action = records.start_timer()
         </field>
         
-        
     </record>
 
      <record id="action_stop_timer" model="ir.actions.server">

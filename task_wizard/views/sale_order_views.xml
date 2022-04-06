@@ -9,6 +9,10 @@
          <xpath expr="//header" position="inside">
             <button name="my_button" string="Wizard Confirm" class="btn-primary" type="object"/>        
          </xpath>
+          <!-- <xpath expr="//header" position="inside">
+            <button name="action_report_print" string="Print Report" type="object" class="btn-primary"/>
+         </xpath> -->
+         
      
          <xpath expr="//button[@name='preview_sale_order']" position="before">
             <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-archive">
