@@ -22,5 +22,3 @@ class SaleOrder(models.Model):
     # def action_report_print(self):
     #     return self.env.ref('sale.action_report_saleorder') .report_action(self)
 
-
-    
