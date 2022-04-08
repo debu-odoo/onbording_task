@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- cron of sale.order -->
+
+    <data noupdate="1">
+        <record id="test_sale_shedule" model="ir.cron">
+            <field name="name">Check Sale Shedule</field>
+            <field name="model_id" ref="model_sale_order"/>
+            <field name="type">ir.actions.server</field>
+            <field name="code">model.test_cron_job()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+        </record>
+    </data>
+
+</odoo>
