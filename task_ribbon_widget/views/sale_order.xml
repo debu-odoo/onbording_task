@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <record id="sale_order_inherit" model="ir.ui.view">
+        <field name="name">sale.order</field>
+        <field name="model">sale.order</field>
+        <field name = "inherit_id" ref = "sale.view_order_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/div[@name='button_box']" position="after">
+                <widget name="debu_ribbon" title="Order Confirmed" class="ribbon ribbon-top"
+                attrs="{'visible': [('state', '=', 'sale')]}"/>
+                <widget name="debu_ribbon" title="Order Cancelled" bg_color="bg-danger" class="ribbon ribbon-top"
+                attrs="{'invisible': [('state', '!=', 'cancel')]}"/>
+                <widget name="debu_ribbon" title="Order Draft"  class="ribbon ribbon-top"
+                attrs="{'invisible': [('state', '!=', 'draft')]}"/>
+            </xpath>
+           
+        </field> 
+   </record> 
+
+</odoo>

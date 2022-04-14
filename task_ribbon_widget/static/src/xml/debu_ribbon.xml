@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<template>
+
+    <t t-name="task_ribbon_widget.debu_ribbon">
+        <div class="ribbon ribbon-top">
+            <span t-att-class="widget.className" t-att-title="widget.tooltip">
+                <t t-esc="widget.text"/>
+            </span>
+        </div>
+    </t>
+
+</template>
